@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 100vh;
+}
+
+.mobile {
+    display: none;
+}
+
+
+nav{
+    display: flex;
+    height: 64px;
+}
+
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+    margin: 0 24px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+nav .logo img{
+    height: 52px;
+}
+
+nav .menu{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px;
+    /* margin-top: 16px; */
+
+}
+
+nav .menu ul li{
+    color: rgb(100, 97, 97);
+    display: inline-block;
+    align-items: center;
+    margin: 0 16px;
+    font-size: 22px;
+}
+nav .menu ul li a{
+    color: rgb(100, 97, 97);
+}
+
+nav .menu ul li a:hover{
+    padding: 1px 0px;
+    color: rgb(66, 62, 62);
+    border-bottom: 3px solid #000;
+    border-radius: 10px;
+}
+
+header .header-content{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 64px);
+    background-color: lightgray;
+}
+
+header .header-content .header-img{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+header .header-content .header-img img{
+    width: 100%;
+}
+
+
+header .header-content .header-text{
+    width: 40%;
+    margin-left: 24px;
+
+}
+
+header .header-content .header-text h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+header .header-content .header-text p{
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+header .header-content .header-text button{
+    padding: 12px 32px;
+    font-size: 20px;
+    background-color: rgb(66, 62, 62);
+    color: #fff;
+    border: none;
+    width: 70%;
+    cursor: pointer;
+}
+
+
+/* Reading Section Starts here */
+
+.reading{
+    display: flex;
+    height: 100vh;
+}
+
+.reading .reading-left{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.reading .reading-left .reading-left-img img{
+    width: 100%;
+    height: auto;
+}
+
+.reading .reading-left .reading-left-text{
+    margin-top: 32px;
+}
+
+.reading .reading-left .reading-left-text h1{
+    margin-bottom: 24px;
+    font-size: 43px;
+}
+.reading .reading-left .reading-left-text .p1{
+    font-family: cursive;
+    color: gray;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.reading .reading-left .reading-left-text .p2{
+    margin-bottom: 32px !important;
+    font-size: 18px;
+}
+
+
+.reading .reading-right{
+    margin: 24px;
+    width: 40%;
+}
+
+.reading .reading-right .card{
+    display: flex;
+    margin: 24px;
+    justify-content: space-between; 
+    margin-top: 10px;
+}
+.reading .reading-right .card .card-img{
+    width: 35%;
+}
+
+.reading .reading-right .card .card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.reading .reading-right .card .card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content:center;
+    margin-left: 16px;
+    width: 65%;
+}
+.reading .reading-right .card .card-text h1{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.reading .reading-right .card .card-text p{
+    font-size: 18px;
+}
+.reading .reading-right .card .card-text .btn{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Learning Section Starts Here: */
+
+.learning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.learning-mobile{
+    display: none;
+}
+
+.learning .heading{
+    margin: 32px auto;
+    font-size: 30px;
+}
+
+.learning .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 32px 72px;
+    
+}
+
+.learning .cards .card{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 30%;
+    background-color: #fff;
+}
+
+.learning .cards .card .card-img{
+    width: 100%;
+}
+
+.learning .cards .card .card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.learning .cards .card .card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 135px;
+    margin: 16px;
+    width: 100%;
+}
+.learning .cards .card .card-text h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.learning .cards .card .card-text h3{
+    color: gray;
+}
+.learning .cards .card .card-text p{
+    font-size: 18px;
+    color: gray;
+}
+.learning .cards .card .card-text .btn{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Theses section starts here */
+.thesis{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.thesis .heading{
+    margin: 32px auto;
+    font-size: 30px;
+}
+
+.thesis .center-section{
+    display: flex;
+    gap: 32px;
+}
+
+.thesis .center-section .left{
+    width: 60%;
+    margin: 24px;
+}
+.thesis .center-section .left .video video{
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.thesis .center-section .left .text-part h2{
+    margin-bottom: 8px;
+}
+
+.thesis .center-section .left .text-part p{
+    margin-bottom: 32px;
+    color: rgb(59, 57, 57);
+    font-family: cursive;
+    text-wrap: wrap;
+}
+
+
+.thesis .center-section .right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 23px;
+}
+
+.thesis .center-section .right .card{
+    display: flex;
+    flex-direction: row;    
+}
+
+.thesis .center-section .right .card:hover{
+    background: gainsboro;
+}
+
+.thesis .center-section .right .card .card-img{
+    width: 35%;
+    margin: 16px;
+}
+
+.thesis .center-section .right .card .card-img img{
+    width: 100%;
+}
+
+.thesis .center-section .right .card .card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 16px;
+    width: 65%;
+}
+
+.thesis .center-section .right .card .card-text p{
+    color: gray;
+}
+
+.thesis .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 24px;
+}
+
+.thesis .footer .footer-links{
+    display: flex;
+}
+
+.thesis .footer .footer-links a {
+    margin-right: 10px;
+    color: gray;
+}

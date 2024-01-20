@@ -1,0 +1,166 @@
+@media only screen and (max-width: 480px) {
+    header{
+        height: 80vh;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        height: 64px;
+        width: 100%;
+    }
+
+    .mobile .mobile-menu ul{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .mobile .mobile-menu ul li{
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .mobile .mobile-menu ul li a img{
+        height: 50px;
+    }
+
+    header .header-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: calc(80vh - 64px);
+    }
+
+    header .header-content .header-img{
+        width: 100%;
+    }
+    header .header-content .header-img img{
+        width: 90%;
+    }
+
+    header .header-content .header-text{
+        width: 100%;
+        margin-left: 24px;
+    }
+    header .header-content .header-text h1{
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    
+    header .header-content .header-text p{
+        font-size: 30px;
+    }
+    header .header-content .header-text button{
+        width: 90%;
+    }
+
+    .reading{
+        display: flex;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .reading .reading-left{
+        width: 100%;
+        display: none;
+    }
+
+    .reading .reading-right{
+        width: 100%;
+        margin: 0;
+    }
+    .reading .reading-right .card{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+    
+    .reading .reading-right .card .card-img{
+        width: 100%;
+    }
+    .reading .reading-right .card .card-img img{
+        width: 100%;
+        height: 200px;
+    }
+    .reading .reading-right .card .card-text{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /* Learning section */
+
+    .learning{
+        display: none;
+    }
+
+    .learning-mobile{
+        display: block;
+    }
+
+    .learning-mobile h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .learning-mobile .items ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 16px;
+    }
+
+    .learning-mobile .items ul li{
+        padding: 16px 16px 24px 16px;
+        background-color: lightgray;
+        font-size: 18px;
+    }
+
+    /* Thesis Section Satrts here */
+    .thesis{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .thesis .heading{
+        margin: 32px auto;
+        font-size: 30px;
+    }
+    
+    .thesis .center-section{
+        display: flex;
+        gap: 32px;
+    }
+    
+    .thesis .center-section .left{
+        width: 100%;
+        margin: 0;
+    }
+    .thesis .center-section .left .video video{
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+    }
+    
+    .thesis .center-section .left .text-part{
+        display: none;
+    }
+    
+    
+    .thesis .center-section .right{
+        display: none;
+    }
+
+    
+    .thesis .footer .footer-links{
+        display: none;
+    }
+
+}
